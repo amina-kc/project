@@ -1,0 +1,584 @@
+# Kconfig - STM32CUBE HAL config
+
+# Copyright (c) 2016 Linaro Limited.
+#
+# SPDX-License-Identifier: Apache-2.0
+
+config HAS_STM32CUBE
+    bool
+    select HAS_CMSIS
+    depends on SOC_FAMILY_STM32
+
+if HAS_STM32CUBE
+
+config USE_STM32_HAL_ADC
+	bool
+
+config USE_STM32_HAL_ADC_EX
+	bool
+
+config USE_STM32_HAL_CAN
+	bool
+
+config USE_STM32_HAL_CEC
+	bool
+
+config USE_STM32_HAL_COMP
+	bool
+
+config USE_STM32_HAL_CORTEX
+	bool
+	default y
+
+config USE_STM32_HAL_CRC
+	bool
+
+config USE_STM32_HAL_CRC_EX
+	bool
+
+config USE_STM32_HAL_CRYPT
+	bool
+
+config USE_STM32_HAL_CRYPT_EX
+	bool
+
+config USE_STM32_HAL_DAC
+	bool
+
+config USE_STM32_HAL_DAC_EX
+	bool
+
+config USE_STM32_HAL_DCMI
+	bool
+
+config USE_STM32_HAL_DCMI_EX
+	bool
+
+config USE_STM32_HAL_DFSDM
+	bool
+
+config USE_STM32_HAL_DFSDM_EX
+	bool
+
+config USE_STM32_HAL_DMA
+	bool
+	default y
+
+config USE_STM32_HAL_DMA2D
+	bool
+	default y
+
+config USE_STM32_HAL_DMA_EX
+	bool
+	default y
+
+config USE_STM32_HAL_DSI
+	bool
+	default y
+
+config USE_STM32_HAL_ETH
+	bool
+
+config USE_STM32_HAL_FIREWALL
+	bool
+
+config USE_STM32_HAL_FLASH
+	bool
+
+config USE_STM32_HAL_FLASH_EX
+	bool
+
+config USE_STM32_HAL_FLASH_RAMFUNC
+	bool
+
+config USE_STM32_HAL_FMPI2C
+	bool
+
+config USE_STM32_HAL_FMPI2C_EX
+	bool
+
+config USE_STM32_HAL_GFXMMU
+	bool
+
+config USE_STM32_HAL_GPIO
+	bool
+	default y
+
+config USE_STM32_HAL_GPIO_EX
+	bool
+	default y
+
+config USE_STM32_HAL_HASH
+	bool
+
+config USE_STM32_HAL_HASH_EX
+	bool
+
+config USE_STM32_HAL_HCD
+	bool
+
+config USE_STM32_HAL_HRTIM
+	bool
+
+config USE_STM32_HAL_I2C
+	bool
+	default y	
+
+config USE_STM32_HAL_I2C_EX
+	bool
+	default y
+
+config USE_STM32_HAL_I2S
+	bool
+
+config USE_STM32_HAL_I2S_EX
+	bool
+
+config USE_STM32_HAL_IPCC
+	bool
+
+config USE_STM32_HAL_IRDA
+	bool
+
+config USE_STM32_HAL_IWDG
+	bool
+
+config USE_STM32_HAL_JPEG
+	bool
+
+config USE_STM32_HAL_LCD
+	bool
+	default y
+
+config USE_STM32_HAL_LPTIM
+	bool
+
+config USE_STM32_HAL_LTDC
+	bool
+	default y
+
+config USE_STM32_HAL_LTDC_EX
+	bool
+	default y
+
+config USE_STM32_HAL_MDIOS
+	bool
+
+config USE_STM32_HAL_MMC
+	bool
+
+config USE_STM32_HAL_NAND
+	bool
+
+config USE_STM32_HAL_NOR
+	bool
+
+config USE_STM32_HAL_OPAMP
+	bool
+
+config USE_STM32_HAL_OPAMP_EX
+	bool
+
+config USE_STM32_HAL_OSPI
+	bool
+
+config USE_STM32_HAL_PCCARD
+	bool
+
+config USE_STM32_HAL_PCD
+	bool
+
+config USE_STM32_HAL_PCD_EX
+	bool
+
+config USE_STM32_HAL_PWR
+	bool
+
+config USE_STM32_HAL_PWR_EX
+	bool
+	default y
+
+config USE_STM32_HAL_QSPI
+	bool
+
+config USE_STM32_HAL_RCC
+	bool
+	default y
+
+config USE_STM32_HAL_RCC_EX
+	bool
+	default y
+
+config USE_STM32_HAL_RNG
+	bool
+
+config USE_STM32_HAL_RTC
+	bool
+
+config USE_STM32_HAL_RTC_EX
+	bool
+
+config USE_STM32_HAL_SAI
+	bool
+
+config USE_STM32_HAL_SAI_EX
+	bool
+
+config USE_STM32_HAL_SD
+	bool
+
+config USE_STM32_HAL_SD_EX
+	bool
+
+config USE_STM32_HAL_SDADC
+	bool
+
+config USE_STM32_HAL_SDRAM
+	bool
+	default y
+	
+config USE_STM32_HAL_SMARTCARD
+	bool
+
+config USE_STM32_HAL_SMARTCARD_EX
+	bool
+
+config USE_STM32_HAL_SMBUS
+	bool
+
+config USE_STM32_HAL_SPDIFRX
+	bool
+
+config USE_STM32_HAL_SPI
+	bool
+	default y
+
+config USE_STM32_HAL_SPI_EX
+	bool
+	default y
+
+config USE_STM32_HAL_SRAM
+	bool
+	default y
+
+config USE_STM32_HAL_SWPMI
+	bool
+
+config USE_STM32_HAL_TIM
+	bool
+
+config USE_STM32_HAL_TIM_EX
+	bool
+
+config USE_STM32_HAL_TSC
+	bool
+
+config USE_STM32_HAL_UART
+	bool
+
+config USE_STM32_HAL_UART_EX
+	bool
+
+config USE_STM32_HAL_USART
+	bool
+
+config USE_STM32_HAL_USART_EX
+	bool
+
+config USE_STM32_HAL_WWDG
+	bool
+
+config USE_STM32_LL_ADC
+	bool
+
+config USE_STM32_LL_COMP
+	bool
+
+config USE_STM32_LL_CRC
+	bool
+
+config USE_STM32_LL_CRS
+	bool
+
+config USE_STM32_LL_DAC
+	bool
+
+config USE_STM32_LL_DMA
+	bool
+	default y
+
+config USE_STM32_LL_DMA2D
+	bool
+	default y
+
+config USE_STM32_LL_EXTI
+	bool
+	default y
+
+config USE_STM32_LL_FMC
+	bool
+	default y
+
+config USE_STM32_LL_FSMC
+	bool
+	default y
+
+config USE_STM32_LL_GPIO
+	bool
+	default y
+
+config USE_STM32_LL_HRTIM
+	bool
+
+config USE_STM32_LL_I2C
+	bool
+	default y
+
+config USE_STM32_LL_IPCC
+	bool
+
+config USE_STM32_LL_LPTIM
+	bool
+
+config USE_STM32_LL_LPUART
+	bool
+
+config USE_STM32_LL_OPAMP
+	bool
+
+config USE_STM32_LL_PWR
+	bool
+
+config USE_STM32_LL_RCC
+	bool
+	default y
+
+config USE_STM32_LL_RNG
+	bool
+
+config USE_STM32_LL_RTC
+	bool
+
+config USE_STM32_LL_SDMMC
+	bool
+
+config USE_STM32_LL_SPI
+	bool
+	default y
+
+config USE_STM32_LL_SWPMI
+	bool
+
+config USE_STM32_LL_TIM
+	bool
+
+config USE_STM32_LL_USART
+	bool
+
+config USE_STM32_LL_USB
+	bool
+
+config USE_STM32_LL_UTILS
+	bool
+
+config USE_STM32_LCD_DRIVER
+	bool
+	default y
+
+config USE_STM32_F769
+	bool
+	default y
+
+config  USE_STM32_SDRAM
+	bool
+	default y
+
+config USE_STM32_FONT8
+	bool
+	default y
+
+config USE_STM32_FONT12
+	bool
+	default y
+
+config USE_STM32_FONT16
+	bool
+	default y
+
+config USE_STM32_FONT20
+	bool
+	default y
+
+config USE_STM32_FONT24
+	bool
+	default y
+
+config USE_STM32_FT6
+	bool
+	default y
+
+config USE_STM32_ADV
+	bool
+	default y
+
+config USE_STM32_TFT
+	bool
+	default y
+
+config USE_STM32_TOUCHPAD
+	bool
+	default y
+
+config USE_STM32_LCDF7
+	bool
+	default y
+
+
+config USE_STM32_HAL_LVDISP
+	bool
+	default y
+
+config USE_STM32_HAL_LVGROUP
+	bool
+	default y
+
+config USE_STM32_HAL_LVINDEV
+	bool
+	default y
+
+config USE_STM32_HAL_LVOBJ
+	bool
+	default y
+
+config USE_STM32_HAL_LVREF
+	bool
+	default y
+
+
+config USE_STM32_HAL_LVSTYLE
+	bool
+	default y
+
+config USE_STM32_HAL_LVTHEME
+	bool
+	default y
+
+config USE_STM32_HAL_TICK
+	bool
+	default y
+
+config USE_STM32_HAL_LVGL
+	bool
+	default y
+
+config USE_STM32_HAL_INDEV
+	bool
+	default y
+
+config USE_STM32_HAL_LVFS
+	bool
+	default y
+
+config USE_STM32_HAL_LVGC
+	bool
+	default y
+
+config USE_STM32_HAL_LVLL
+	bool
+	default y
+
+config USE_STM32_HAL_LVLOG
+	bool
+	default y
+
+config USE_STM32_HAL_LVMEM
+	bool
+	default y
+
+config USE_STM32_HAL_LVTXT
+	bool
+	default y
+
+config USE_STM32_HAL_LVANIM
+	bool
+	default y
+
+config USE_STM32_HAL_LVAREA
+	bool
+	default y
+
+config USE_STM32_HAL_LVCIRC
+	bool
+	default y
+
+config USE_STM32_HAL_LVMATH
+	bool
+	default y
+
+config USE_STM32_HAL_LVTASK
+	bool
+	default y
+
+config USE_STM32_HAL_LVCOLOR
+	bool
+	default y
+
+config USE_STM32_HAL_LVTEMPL
+	bool
+	default y
+
+config USE_STM32_HAL_LVUTIL
+	bool
+	default y
+
+config USE_STM32_TS
+	bool
+	default y
+
+config USE_STM32_HAL_LVDRAW
+	bool
+	default y
+
+config USE_STM32_HAL_LVDRAWARC
+	bool
+	default y
+
+config USE_STM32_HAL_LVIMGCACHE
+	bool
+	default y
+
+config USE_STM32_HAL_LVIMGDECOD
+	bool
+	default y
+
+config USE_STM32_HAL_LVDRAWIMG
+	bool
+	default y
+
+config USE_STM32_HAL_LVDRAWRECT
+	bool
+	default y
+
+config USE_STM32_HAL_LVDRAWBASIC
+	bool
+	default y
+
+config USE_STM32_HAL_LVDRAWLABEL
+	bool
+	default y
+
+config USE_STM32_HAL_LVDRAWLINE
+	bool
+	default y
+
+config USE_STM32_HAL_LVDRAWTRIG
+	bool
+	default y
+
+config USE_STM32_HAL_LVGL_EXAMPLE
+	bool
+	default y
+
+
+
+endif

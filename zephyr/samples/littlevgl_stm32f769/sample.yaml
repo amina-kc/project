@@ -1,0 +1,7 @@
+sample:
+  description: littlevgl for stm32f769 application
+  name: littlevgl_stm32f769
+tests:
+  sample.gui.lvgl:
+    harness: display
+    tags: sample display test
